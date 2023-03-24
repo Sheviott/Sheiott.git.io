@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="../files/libs/accordion/accordion.css?_v=20230322182405"> -->
-  <link rel="stylesheet" href="css/style.min.css?_v=20230322182405">
+  <!-- <link rel="stylesheet" href="../files/libs/accordion/accordion.css?_v=20230324142049"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20230324142049" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/style.min.css?_v=20230324142049">
   <title>Главная</title>
 </head>
 
@@ -16,7 +19,7 @@
   <div class="header__container">
     <div class="header__body">
       <div class="header__logo">
-        <a href="index.html"><img src="images/icons/logo.svg" alt="" /></a>
+        <img src="images/icons/logo.svg" alt="" />
       </div>
       <div class="header__menu menu">
         <button type="button" class="menu__icon icon-menu">
@@ -28,15 +31,15 @@
               <a href="" class="menu__link">О нас в цифрах</a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="https://wa.me/79000000000" class="menu__link">
                 WhatsApp</a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href=" https://t.me/username" class="menu__link">
                 Telegram</a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="mailto:user@us.ru" class="menu__link">
                 E-mail</a>
             </li>
           </ul>
@@ -48,11 +51,57 @@
       <main class="page">
         <section class="mainscreen">
           <div class="mainscreen__container">
+            <div class="mainscreen__top-right">
+              <picture>
+                <source
+                  
+                  srcset="
+                    images/main/mainscreen/right.png    1x,
+                    images/main/mainscreen/right@2x.png 2x
+                  "
+                  type="image/webp"
+                />
+                <img src="images/main/mainscreen/right.png" srcset="" alt="" />
+              </picture>
+            </div>
+            <div class="mainscreen__bot-left">
+              <picture>
+                <source
+                  
+                  srcset="
+                    images/main/mainscreen/left-bot.png    1x,
+                    images/main/mainscreen/left-bot@2x.png 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="images/main/mainscreen/left-bot.png"
+                  srcset=""
+                  alt=""
+                />
+              </picture>
+            </div>
             <div class="mainscreen__body">
               <div class="mainscreen__top">
+
+                <div class="mainscreen__top-left">
+                  <picture>
+                    <source
+                      
+                      srcset="
+                        images/main/mainscreen/left.png    1x,
+                        images/main/mainscreen/left@2x.png 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img src="images/main/mainscreen/left.png" srcset="" alt="" />
+                  </picture>
+                </div>
+
                 <div class="mainscreen__content">
                   <h1 class="mainscreen__title">
-                    Честные закупки для вашего ресторанного бизнеса.
+                    Честные закупки для <br />
+                    вашего ресторанного бизнеса.
                   </h1>
                   <div class="mainscreen__subtitle">
                     Большая база надежных поставщиков и покупателей.
@@ -62,13 +111,12 @@
                   <button class="mainscreen__client btn btn-g">
                     Я покупатель
                   </button>
-                  <button class="mainscreen__provider btn">Я поставщик</button>
+                  <button class="mainscreen__provider btn btn-w">Я поставщик</button>
                 </div>
               </div>
-              
             </div>
           </div>
-          <div class="mainscreen__bottom">
+          <div id="new-products" class="mainscreen__bottom">
             <div class="mainscreen__header title">Новые торги:</div>
             <div class="mainscreen__slider swiper">
               <button type="button" class="swiper-button-prev"></button>
@@ -104,11 +152,29 @@
                     <div class="slide__price">125руб</div>
                   </div>
                 </div>
+                <div class="mainscreen__slide swiper-slide">
+                  <div class="slide__body">
+                    <div class="slide__header">Макароны</div>
+                    <div class="slide__price">125руб</div>
+                  </div>
+                </div>
+                <div class="mainscreen__slide swiper-slide">
+                  <div class="slide__body">
+                    <div class="slide__header">Макароны</div>
+                    <div class="slide__price">125руб</div>
+                  </div>
+                </div>
+                <div class="mainscreen__slide swiper-slide">
+                  <div class="slide__body">
+                    <div class="slide__header">Макароны</div>
+                    <div class="slide__price">125руб</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="service">
+        <section id="service" class="service">
           <div class="service__container">
             <div class="service__body">
               <h2 class="service__title title">Как работает наш сервис:</h2>
@@ -118,10 +184,9 @@
                     <div class="column__image">
                       <picture>
                         <source
-                          media="(max-width: 768px)"
                           srcset="
                             images/main/services/img01.jpg    1x,
-                            images/main/services/img01@2x.jpg 2x
+                            images/main/services/img01@2x.jpg 2x,
                           "
                           type="image/webp"
                         />
@@ -137,7 +202,7 @@
                     <div class="column__image">
                       <picture>
                         <source
-                          media="(max-width: 768px)"
+                          
                           srcset="
                             images/main/services/img02.jpg    1x,
                             images/main/services/img02@2x.jpg 2x
@@ -156,7 +221,7 @@
                     <div class="column__image">
                       <picture>
                         <source
-                          media="(max-width: 768px)"
+                          
                           srcset="
                             images/main/services/img03.jpg    1x,
                             images/main/services/img03@2x.jpg 2x
@@ -175,7 +240,7 @@
                     <div class="column__image">
                       <picture>
                         <source
-                          media="(max-width: 768px)"
+                          
                           srcset="
                             images/main/services/img04.jpg    1x,
                             images/main/services/img04@2x.jpg 2x
@@ -194,7 +259,7 @@
                     <div class="column__image">
                       <picture>
                         <source
-                          media="(max-width: 768px)"
+                          
                           srcset="
                             images/main/services/img05.jpg    1x,
                             images/main/services/img05@2x.jpg 2x
@@ -212,79 +277,273 @@
             </div>
           </div>
         </section>
-        <section class="partners">
-          <div class="partners__container">
-            <div class="partners__body">
-              <h2 class="partners__title title">Мы работаем с:</h2>
-              <div class="partners__slider swiper">
-                <div class="partners__wrapper swiper-wrapper">
-                  <div class="partners__slide swiper-slide">
-                    <img class="partners__brand" src="images/main/partners/brand01.svg" alt="" />
+        <section id="sale" class="sale">
+          <div class="sale__container">
+            <div class="sale__body">
+              <div class="sale__title title">Акции и новинки</div>
+              <div class="sale__swipe swipe-to-side">Свайп в сторону</div>
+            </div>
+          </div>
+          <div class="sale__slider swiper">
+            <div class="sale__wrapper swiper-wrapper">
+              <div class="sale__slide swiper-slide slide-sale">
+                <div class="slide-sale__body">
+                  <div class="slide-sale__content">
+                    <div class="slide-sale__name">Лучший урожай</div>
+                    <div class="slide-sale__subtext">семейства Капустных</div>
+                    <div class="slide-sale__price">59руб. <span>1кг</span></div>
                   </div>
-                  <div class="partners__slide swiper-slide">
-                    <img class="partners__brand" src="images/main/partners/brand02.svg" alt="" />
+                  <div class="slide-sale__image">
+                    <picture>
+                      <source
+                        
+                        srcset="
+                          images/main/sale/img1.png    1x,
+                          images/main/sale/img1@2x.png 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img src="images/main/sale/img1.png" srcset="" alt="" />
+                    </picture>
                   </div>
-                  <div class="partners__slide swiper-slide">
-                    <img class="partners__brand" src="images/main/partners/brand03.svg" alt="" />
+                </div>
+              </div>
+              <div class="sale__slide swiper-slide slide-sale">
+                <div class="slide-sale__body">
+                  <div class="slide-sale__content">
+                    <div class="slide-sale__name">
+                      Собери самые лучшие продукты
+                    </div>
+                    <div class="slide-sale__subtext">В свою корзину</div>
                   </div>
-                  <div class="partners__slide swiper-slide">
-                    <img class="partners__brand" src="images/main/partners/brand04.svg" alt="" />
+                  <div class="slide-sale__image">
+                    <picture>
+                      <source
+                        
+                        srcset="
+                          images/main/sale/img2.png    1x,
+                          images/main/sale/img2@2x.png 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img src="images/main/sale/img2.png" srcset="" alt="" />
+                    </picture>
                   </div>
-                  <div class="partners__slide swiper-slide">
-                    <img class="partners__brand" src="images/main/partners/brand04.svg" alt="" />
+                </div>
+              </div>
+              <div class="sale__slide swiper-slide slide-sale">
+                <div class="slide-sale__body">
+                  <div class="slide-sale__content">
+                    <div class="slide-sale__name">Оливковое масло</div>
+                    <div class="slide-sale__subtext">
+                      Самое качественное и по самой лучшей цене от наших
+                      проверенных поставшиков.
+                    </div>
+                    <div class="slide-sale__price">190руб.</div>
+                  </div>
+                  <div class="slide-sale__image">
+                    <picture>
+                      <source
+                        
+                        srcset="
+                          images/main/sale/img3.png    1x,
+                          images/main/sale/img3@2x.png 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img src="images/main/sale/img3.png" srcset="" alt="" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="sale__slide swiper-slide slide-sale">
+                <div class="slide-sale__body">
+                  <div class="slide-sale__content">
+                    <div class="slide-sale__name">
+                      Поставшики сами к вам приедут
+                    </div>
+                    <div class="slide-sale__subtext">
+                      Еще текстовое поле предложение
+                    </div>
+                  </div>
+                  <div class="slide-sale__image">
+                    <picture>
+                      <source
+                        
+                        srcset="
+                          images/main/sale/img4.png    1x,
+                          images/main/sale/img4@2x.png 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img src="images/main/sale/img4.png" srcset="" alt="" />
+                    </picture>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="QA">
+        <section id="partners" class="partners">
+          <div class="partners__">
+            <div class="partners__body">
+              <h2 class="partners__title __container title">Мы работаем с:</h2>
+              <div class="partners__slider swiper">
+                <div class="partners__wrapper swiper-wrapper">
+                  <div class="partners__slide swiper-slide">
+                    <img
+                      class="partners__brand"
+                      src="images/main/partners/brand01.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img
+                      class="partners__brand"
+                      src="images/main/partners/brand02.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img
+                      class="partners__brand"
+                      src="images/main/partners/brand03.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img
+                      class="partners__brand"
+                      src="images/main/partners/brand04.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img
+                      class="partners__brand"
+                      src="images/main/partners/brand04.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img
+                      class="partners__brand"
+                      src="images/main/partners/brand04.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img
+                      class="partners__brand"
+                      src="images/main/partners/brand04.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img
+                      class="partners__brand"
+                      src="images/main/partners/brand04.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="QA" class="QA">
           <div class="QA__background QA__background-left">
             <picture>
-            <source  media='(max-width: 768px)' srcset='images/main/QA/mobile-left.png 1x, images/main/QA/mobile-left@2x.png 2x' type='image/webp'>
-            <img src='images/main/QA/mobile-left.png' srcset='' alt='' >
+              <source
+                
+                srcset="
+                  images/main/QA/mobile-left.png    1x,
+                  images/main/QA/mobile-left@2x.png 2x
+                "
+                type="image/webp"
+              />
+              <img src="images/main/QA/mobile-left.png" srcset="" alt="" />
             </picture>
           </div>
           <div class="QA__background QA__background-right">
             <picture>
-              <source  media='(max-width: 768px)' srcset='images/main/QA/mobile-right.png 1x, images/main/QA/mobile-right@2x.png 2x' type='image/webp'>
-              <img src='images/main/QA/mobile-right.png' srcset='' alt='' >
-              </picture>
+              <source
+                
+                srcset="
+                  images/main/QA/mobile-right.png    1x,
+                  images/main/QA/mobile-right@2x.png 2x
+                "
+                type="image/webp"
+              />
+              <img src="images/main/QA/mobile-right.png" srcset="" alt="" />
+            </picture>
           </div>
+          
           <div class="QA__container">
             <div class="QA__body">
-              <div class="QA__title title">Часто задаваемые вопросы</div>
+              <div class="QA__title title">Часто задаваемые вопросы               
+              </div>
               <div class="QA__content">
                 <ul id="accordion" class="accordionjs">
                   <li>
-                      <div>Какую комиссию удерживаете?</div>
-                      <div>
-                          Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Строчка собрал над алфавит единственное назад жаренные составитель букв раз, обеспечивает вдали, заглавных решила предупредила большого, своего текста ее по всей рыбными не? Дал, рукописи курсивных! Они ему свой строчка которое агентство решила вскоре гор все несколько, речью жаренные мир ее подпоясал страна семантика, назад маленькая пор текстами свое! То снова рекламных своего, безопасную пунктуация домах деревни переписывается наш она! Рыбного букв, инициал которой жизни прямо дороге всемогущая на берегу одна буквоград большой до? Океана ты над рукописи себя страну власти буквенных залетают взобравшись, безопасную приставка всемогущая продолжил за коварный языком.
-                      </div>
+                    <div>Какую комиссию удерживаете?</div>
+                    <div>
+                      Далеко-далеко за словесными горами в стране гласных и
+                      согласных живут, рыбные тексты. Строчка собрал над алфавит
+                      единственное назад жаренные составитель букв раз,
+                      обеспечивает вдали, заглавных решила предупредила
+                      большого, своего текста ее по всей рыбными не? Дал,
+                      рукописи курсивных! Они ему свой строчка которое агентство
+                      решила вскоре гор все несколько, речью жаренные мир ее
+                      подпоясал страна семантика, назад маленькая пор текстами
+                      свое! То снова рекламных своего, безопасную пунктуация
+                      домах деревни переписывается наш она! Рыбного букв,
+                      инициал которой жизни прямо дороге всемогущая на берегу
+                      одна буквоград большой до? Океана ты над рукописи себя
+                      страну власти буквенных залетают взобравшись, безопасную
+                      приставка всемогущая продолжил за коварный языком.
+                    </div>
                   </li>
                   <li>
-                      <div>Работаете ли с физическими лицами?</div>
-                      <div>
-                          Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Ты грамматики образ там lorem вопрос, безопасную от всех злых толку предупредила то жизни оксмокс он заголовок ipsum текстами встретил решила!
-                      </div>
+                    <div>Работаете ли с физическими лицами?</div>
+                    <div>
+                      Далеко-далеко за словесными, горами в стране гласных и
+                      согласных живут рыбные тексты. Ты грамматики образ там
+                      lorem вопрос, безопасную от всех злых толку предупредила
+                      то жизни оксмокс он заголовок ipsum текстами встретил
+                      решила!
+                    </div>
                   </li>
-              
+
                   <!-- Section 3 -->
                   <li>
-                      <div>Какую комиссию удерживаете?</div>
-                      <div>
-                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре дорогу решила реторический заманивший рукописи предложения, даль осталось назад рыбными силуэт возвращайся, большого использовало инициал букв родного, диких дал.
-                      </div>
+                    <div>Какую комиссию удерживаете?</div>
+                    <div>
+                      Далеко-далеко за словесными горами в стране гласных и
+                      согласных живут рыбные тексты. Вскоре дорогу решила
+                      реторический заманивший рукописи предложения, даль
+                      осталось назад рыбными силуэт возвращайся, большого
+                      использовало инициал букв родного, диких дал.
+                    </div>
                   </li>
                   <!-- Section 4 -->
                   <li>
-                      <div>Работаете ли с физическими лицами?</div>
-                      <div>
-                         Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О путь щеке, подпоясал все грустный буквоград города запятой. Реторический агентство текстами предупредила то рыбными страну сих себя напоивший что?
-                      </div>
+                    <div>Работаете ли с физическими лицами?</div>
+                    <div>
+                      Далеко-далеко за словесными горами в стране гласных и
+                      согласных живут рыбные тексты. О путь щеке, подпоясал все
+                      грустный буквоград города запятой. Реторический агентство
+                      текстами предупредила то рыбными страну сих себя напоивший
+                      что?
+                    </div>
                   </li>
-              
-              </ul>
+                </ul>
+                <div class="QA__image">
+                  <picture>
+                  <source  media='(max-width: 768px)' srcset='images/main/QA/img.png 1x,images/main/QA/img@2x.png 2x' type='image/webp'>
+                  <img src='images/main/QA/img.png' srcset='' alt='' >
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -292,14 +551,16 @@
         <section class="actions">
           <div class="actions__container">
             <div class="actions__body">
-              <div class="actions__title title">И нечего больше думать!
-                Присоединяйся к профессионалам
-               для выгодных закупок.</div>
-              <div class="actions__subtitle">Большая база надежных поставщиков и покупателей.
+              <div class="actions__title title">
+                И нечего больше думать! Присоединяйся к профессионалам для
+                выгодных закупок.
+              </div>
+              <div class="actions__subtitle">
+                Большая база надежных поставщиков и покупателей.
               </div>
               <div class="actions__buttons">
                 <button class="actions__btn btn btn-g">Покупаю</button>
-                <button class="actions__btn btn">Продаю</button>
+                <button class="actions__btn btn btn-w">Продаю</button>
               </div>
             </div>
           </div>
@@ -326,9 +587,9 @@
               <li>
                 <div class="footer__head">Контакты</div>
                 <div class="footer__list">
-                  <div class="footer__item"><a class="footer__link" href="">Адрес: <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span></a></div>
-                  <div class="footer__item"><a class="footer__link" href="">Почта: <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span></a></div>
-                  <div class="footer__item"><a class="footer__link" href="">Телефон: <span>8000 000 00000</span></a></div>
+                  <div class="footer__item"><div class="footer__link">Адрес: <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span></div></div>
+                  <div class="footer__item"><div class="footer__link">Почта: <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span></div></div>
+                  <div class="footer__item"><a class="footer__link" href="tel:+">Телефон: <span>8-000-000-00-00</span></a></div>
                 </div>
               </li>
               <li>
@@ -336,7 +597,7 @@
                 <div class="footer__list footer__socials">
                   <div class="footer__item"><a class="footer__link" href="">VKontakte</a></div>
                   <div class="footer__item"><a class="footer__link" href="">Instagram</a></div>
-                  <div class="footer__item"><a class="footer__link" href="">WhatsApp</a></div>
+                  <div class="footer__item"><a class="footer__link" href="https://wa.me/79000000000"> WhatsApp</a></div>
                 </div>
               </li>
               <li>
@@ -349,11 +610,18 @@
               </li>
               <li>
                 <div class="footer__head">Навигация</div>
-                <div class="footer__list">
-                  <div class="footer__item"><a class="footer__link" href="">Новые торги</a></div>
-                  <div class="footer__item"><a class="footer__link" href="">Как работает сервис</a></div>
-                  <div class="footer__item"><a class="footer__link" href="">Реклама</a></div>
-                </div>
+                <div class="footer__body-list" >
+                  <div class="footer__list">
+                    <div class="footer__item"><a class="footer__link" href="#new-products">Новые торги</a></div>
+                    <div class="footer__item"><a class="footer__link" href="#service">Как работает сервис</a></div>
+                    <div class="footer__item"><a class="footer__link" href="#sale">Реклама</a></div>
+                  </div>
+                  <div class="footer__list">
+                    <div class="footer__item"><a class="footer__link" href="#sale">Новости</a></div>
+                    <div class="footer__item"><a class="footer__link" href="#partners">Партнёры</a></div>
+                    <div class="footer__item"><a class="footer__link" href="#QA">Часто задаваемые вопросы</a></div>
+                  </div>
+                </div >
               </li>
             </ul>
           </div>
@@ -364,7 +632,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <div class="footer__policy"><a href="">Политика конфиденциальности<a ></div>
+        <div class="footer__policy"><a href="">Политика конфиденциальности</a></div>
         <div class="footer__copy">© 2007-2021 AESbill</div>
       </div>
     </div>
@@ -412,8 +680,8 @@
   </div>
 </div>
     </div>
-    <script src="files/libs/swiper/swiper-bundle.min.js?_v=20230322182405"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js?_v=20230322182405"></script>
-<script src="js/app.min.js?_v=20230322182405"></script>
+    <script src="files/libs/swiper/swiper-bundle.min.js?_v=20230324142049"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js?_v=20230324142049"></script>
+<script src="js/app.min.js?_v=20230324142049"></script>
   </body>
 </html>
