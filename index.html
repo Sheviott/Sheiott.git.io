@@ -4,562 +4,742 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="../files/libs/accordion/accordion.css"> -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="../files/libs/datePicker/air-datepicker.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/style.min.css">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230330213246"
+/>
+<!-- <link rel="stylesheet" href="accordion.css?_v=20230330213246" /> -->
+  <link rel="stylesheet" href="css/style.min.css?_v=20230330213246">
   <title>Главная</title>
 </head>
 
 
-  <body id="mainpage" data-lp>
-    <div class="wrapper ">
-      <header class="header">
-  <div class="header__container">
-    <div class="header__body">
-      <div class="header__logo">
-        <img src="images/icons/logo.svg" alt="">
-      </div>
-      <div class="header__menu menu">
-        <button type="button" class="menu__icon icon-menu">
-          <span></span>
-        </button>
-        <nav class="menu__body">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="" class="menu__link">О нас в цифрах</a>
-            </li>
-            <li class="menu__item">
-              <a href="https://wa.me/79000000000" class="menu__link">
-                WhatsApp</a>
-            </li>
-            <li class="menu__item">
-              <a href=" https://t.me/username" class="menu__link">
-                Telegram</a>
-            </li>
-            <li class="menu__item">
-              <a href="mailto:user@us.ru" class="menu__link">
-                E-mail</a>
-            </li>
-          </ul>
-        </nav>
+  <body data-lp>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container">
+      <div class="header__body">
+        <div class="header__logo">
+            <img src="images/icons/logo.svg" alt="">
+        </div>
+        <div class="header__menu menu">
+          <button type="button" class="menu__icon icon-menu">
+            <span></span>
+          </button>
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="" class="menu__link">Home page</a></li>
+              <li class="menu__item"><a href="" class="menu__link">Terms of Use</a></li>
+              <li class="menu__item"><a href="" class="menu__link">Privacy Policy</a></li>
+              <li class="menu__item"><a href="" class="menu__link">Support</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
+
       <main class="page">
         <section class="mainscreen">
-          <div class="mainscreen__container">
-            <div class="mainscreen__top-right">
-              <picture>
-                <source
-                  srcset="
-                    images/main/mainscreen/right@2x.png    1x,
-                    images/main/mainscreen/right@2x.png 2x,
-                  "
-                  type="image/webp"
-                />
-                <img src="images/main/mainscreen/right@2X.png" srcset="" alt="" />
-              </picture>
-            </div>
-            <div class="mainscreen__bot-left">
-              <picture>
-                <source
-                  srcset="
-                    images/main/mainscreen/left-bot.png    1x,
-                    images/main/mainscreen/left-bot@2x.png 2x
-                  "
-                  type="image/webp"
-                />
-                <img src="images/main/mainscreen/left-bot.png" srcset="" alt="" />
-              </picture>
-            </div>
+
             <div class="mainscreen__body">
-              <div class="mainscreen__top">
-                <div class="mainscreen__top-left">
-                  <picture>
-                    <source
-                      srcset="
-                        images/main/mainscreen/left.png    1x,
-                        images/main/mainscreen/left@2x.png 2x
-                      "
-                      type="image/webp"
-                    />
-                    <img src="images/main/mainscreen/left.png" srcset="" alt="" />
-                  </picture>
-                </div>
+              <!-- Оболочка слайдера -->
+              <div class="mainscreen__slider swiper">
+                <!-- Двигающееся часть слайдера -->
+                <div class="mainscreen__wrapper swiper-wrapper">
+                  <!-- Слайд -->
+                  <div class="mainscreen__slide swiper-slide">
+                    <div class="slide__body">
+                      <div class="slide__content">
+                        <div class="slide__title">We create entertainment</div>
+                        <button class="slide__btn btn">All applications</button>
+                      </div>
+                      <div class="slide__image">
+                        <picture>
+                          <source
+                            media="(max-width: 768px)"
+                            srcset="
+                              images/main/image-mobile.png    1x,
+                              images/main/image-mobile@2x.png 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              images/main/image.png    1x,
+                              images/main/image@2x.png 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img src="images/main/image.png" srcset="" alt="" />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mainscreen__slide swiper-slide">
+                    <div class="slide__body">
+                      <div class="slide__content">
+                        <div class="slide__title">We create entertainment</div>
+                        <button class="slide__btn btn">All applications</button>
+                      </div>
+                      <div class="slide__image">
+                        <picture>
+                          <source
+                            media="(max-width: 768px)"
+                            srcset="
+                              images/main/image-mobile.png    1x,
+                              images/main/image-mobile@2x.png 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              images/main/image.png    1x,
+                              images/main/image@2x.png 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img src="images/main/image.png" srcset="" alt="" />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mainscreen__slide swiper-slide">
+                    <div class="slide__body">
+                      <div class="slide__content">
+                        <div class="slide__title">We create entertainment</div>
+                        <button class="slide__btn btn">All applications</button>
+                      </div>
+                      <div class="slide__image">
+                        <picture>
+                          <source
+                            media="(max-width: 768px)"
+                            srcset="
+                              images/main/image-mobile.png    1x,
+                              images/main/image-mobile@2x.png 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              images/main/image.png    1x,
+                              images/main/image@2x.png 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img src="images/main/image.png" srcset="" alt="" />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mainscreen__slide swiper-slide">
+                    <div class="slide__body">
+                      <div class="slide__content">
+                        <div class="slide__title">We create entertainment</div>
+                        <button class="slide__btn btn">All applications</button>
+                      </div>
+                      <div class="slide__image">
+                        <picture>
+                          <source
+                            media="(max-width: 768px)"
+                            srcset="
+                              images/main/image-mobile.png    1x,
+                              images/main/image-mobile@2x.png 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              images/main/image.png    1x,
+                              images/main/image@2x.png 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img src="images/main/image.png" srcset="" alt="" />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
 
-                <div class="mainscreen__content">
-                  <h1 class="mainscreen__title">
-                    Честные закупки для <br />
-                    вашего ресторанного бизнеса.
-                  </h1>
-                  <div class="mainscreen__subtitle">
-                    Большая база надежных поставщиков и покупателей.
-                  </div>
                 </div>
-                <div class="mainscreen__actions">
-                  <a href="account.html" class="mainscreen__client btn btn-g">
-                    Я покупатель
-                  </a>
-                  <a href="account.html" class="mainscreen__provider btn btn-w">
-                    Я поставщик
-                  </a>
-                </div>
+                <!-- Если нужна пагинация -->
+                <div class="swiper-pagination"></div>
+                <!-- Если нужна навигация (влево/вправо) -->
+                <button type="button" class="swiper-button-prev"></button>
+                <button type="button" class="swiper-button-next"></button>
               </div>
             </div>
-          </div>
-          <div id="new-products" class="mainscreen__bottom">
-            <div class="mainscreen__header title">Новые торги:</div>
-            <div class="mainscreen__slider swiper">
-              <button type="button" class="swiper-button-prev"></button>
-              <button type="button" class="swiper-button-next"></button>
-              <div class="mainscreen__wrapper swiper-wrapper">
-                <div class="mainscreen__slide swiper-slide">
-                  <div class="slide__body">
-                    <div class="slide__header">Макароны</div>
-                    <div class="slide__price">125руб</div>
-                  </div>
-                </div>
-                <div class="mainscreen__slide swiper-slide">
-                  <div class="slide__body">
-                    <div class="slide__header">Сок</div>
-                    <div class="slide__price">125руб</div>
-                  </div>
-                </div>
-                <div class="mainscreen__slide swiper-slide">
-                  <div class="slide__body">
-                    <div class="slide__header">Перец чёрный</div>
-                    <div class="slide__price">125руб</div>
-                  </div>
-                </div>
-                <div class="mainscreen__slide swiper-slide">
-                  <div class="slide__body">
-                    <div class="slide__header">Макароны</div>
-                    <div class="slide__price">125руб</div>
-                  </div>
-                </div>
-                <div class="mainscreen__slide swiper-slide">
-                  <div class="slide__body">
-                    <div class="slide__header">Макароны</div>
-                    <div class="slide__price">125руб</div>
-                  </div>
-                </div>
-                <div class="mainscreen__slide swiper-slide">
-                  <div class="slide__body">
-                    <div class="slide__header">Макароны</div>
-                    <div class="slide__price">125руб</div>
-                  </div>
-                </div>
-                <div class="mainscreen__slide swiper-slide">
-                  <div class="slide__body">
-                    <div class="slide__header">Макароны</div>
-                    <div class="slide__price">125руб</div>
-                  </div>
-                </div>
-                <div class="mainscreen__slide swiper-slide">
-                  <div class="slide__body">
-                    <div class="slide__header">Макароны</div>
-                    <div class="slide__price">125руб</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="service" class="service">
-          <div class="service__container">
-            <div class="service__body">
-              <h2 class="service__title title">Как работает наш сервис:</h2>
-              <div class="service__row">
-                <div class="service__column">
-                  <div class="column__body">
-                    <div class="column__image">
-                      <picture>
-                        <source
-                          srcset="
-                            images/main/services/img01.jpg    1x,
-                            images/main/services/img01@2x.jpg 2x
-                          "
-                          type="image/webp"
-                        />
-                        <img src="images/main/services/img01.jpg" alt="" />
-                      </picture>
-                    </div>
-                    <div class="column__text">Покупатель размещает заказ</div>
-                    <div class="column__number">1.</div>
-                  </div>
-                </div>
-                <div class="service__column">
-                  <div class="column__body">
-                    <div class="column__image">
-                      <picture>
-                        <source
-                          srcset="
-                            images/main/services/img02.jpg    1x,
-                            images/main/services/img02@2x.jpg 2x
-                          "
-                          type="image/webp"
-                        />
-                        <img src="images/main/services/img02.jpg" alt="" />
-                      </picture>
-                    </div>
-                    <div class="column__text">Поставщики и магазины предлагают для вас свои
-                      лучшие цены</div>
-                    <div class="column__number">2.</div>
-                  </div>
-                </div>
-                <div class="service__column">
-                  <div class="column__body">
-                    <div class="column__image">
-                      <picture>
-                        <source
-                          srcset="
-                            images/main/services/img03.jpg    1x,
-                            images/main/services/img03@2x.jpg 2x
-                          "
-                          type="image/webp"
-                        />
-                        <img src="images/main/services/img03.jpg" alt="" />
-                      </picture>
-                    </div>
-                    <div class="column__text">Сервис Да,Шеф! выбирает для вас самое лучшее предложение</div>
-                    <div class="column__number">3.</div>
-                  </div>
-                </div>
-                <div class="service__column">
-                  <div class="column__body">
-                    <div class="column__image">
-                      <picture>
-                        <source
-                          srcset="
-                            images/main/services/img04.jpg    1x,
-                            images/main/services/img04@2x.jpg 2x
-                          "
-                          type="image/webp"
-                        />
-                        <img src="images/main/services/img04.jpg" alt="" />
-                      </picture>
-                    </div>
-                    <div class="column__text">Вы
-                      подтверждаете заказ</div>
-                    <div class="column__number">4.</div>
-                  </div>
-                </div>
-                <div class="service__column">
-                  <div class="column__body">
-                    <div class="column__image">
-                      <picture>
-                        <source
-                          srcset="
-                            images/main/services/img05.jpg    1x,
-                            images/main/services/img05@2x.jpg 2x
-                          "
-                          type="image/webp"
-                        />
-                        <img src="images/main/services/img05.jpg" alt="" />
-                      </picture>
-                    </div>
-                    <div class="column__text">и ожидаете доставку в указанные сроки</div>
-                    <div class="column__number">5.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="sale" class="sale">
-          <div class="sale__container">
-            <div class="sale__body">
-              <div class="sale__title title">Акции и новинки</div>
-              <div class="sale__swipe swipe-to-side">Свайп в сторону</div>
-            </div>
-          </div>
-          <div class="sale__slider swiper">
-            <div class="sale__wrapper swiper-wrapper">
-              <div class="sale__slide swiper-slide slide-sale">
-                <div class="slide-sale__body">
-                  <div class="slide-sale__content">
-                    <div class="slide-sale__name">Лучший урожай</div>
-                    <div class="slide-sale__subtext">семейства Капустных</div>
-                    <div class="slide-sale__price">59руб. <span>1кг</span></div>
-                  </div>
-                  <div class="slide-sale__image">
-                    <picture>
-                      <source
-                        srcset="
-                          images/main/sale/img1.png    1x,
-                          images/main/sale/img1@2x.png 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img src="images/main/sale/img1.png" srcset="" alt="" />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="sale__slide swiper-slide slide-sale">
-                <div class="slide-sale__body">
-                  <div class="slide-sale__content">
-                    <div class="slide-sale__name">
-                      Собери самые лучшие продукты
-                    </div>
-                    <div class="slide-sale__subtext">В свою корзину</div>
-                  </div>
-                  <div class="slide-sale__image">
-                    <picture>
-                      <source
-                        srcset="
-                          images/main/sale/img2.png    1x,
-                          images/main/sale/img2@2x.png 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img src="images/main/sale/img2.png" srcset="" alt="" />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="sale__slide swiper-slide slide-sale">
-                <div class="slide-sale__body">
-                  <div class="slide-sale__content">
-                    <div class="slide-sale__name">Оливковое масло</div>
-                    <div class="slide-sale__subtext">
-                      Самое качественное и по самой лучшей цене от наших
-                      проверенных поставшиков.
-                    </div>
-                    <div class="slide-sale__price">190руб.</div>
-                  </div>
-                  <div class="slide-sale__image">
-                    <picture>
-                      <source
-                        srcset="
-                          images/main/sale/img3.png    1x,
-                          images/main/sale/img3@2x.png 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img src="images/main/sale/img3.png" srcset="" alt="" />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="sale__slide swiper-slide slide-sale">
-                <div class="slide-sale__body">
-                  <div class="slide-sale__content">
-                    <div class="slide-sale__name">
-                      Поставшики сами к вам приедут
-                    </div>
-                    <div class="slide-sale__subtext">
-                      Еще текстовое поле предложение
-                    </div>
-                  </div>
-                  <div class="slide-sale__image">
-                    <picture>
-                      <source
-                        srcset="
-                          images/main/sale/img4.png    1x,
-                          images/main/sale/img4@2x.png 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img src="images/main/sale/img4.png" srcset="" alt="" />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="partners" class="partners">
-          <div class="partners__">
-            <div class="partners__body">
-              <h2 class="partners__title __container title">Мы работаем с:</h2>
-              <div class="partners__slider swiper">
-                <div class="partners__wrapper swiper-wrapper">
-                  <div class="partners__slide swiper-slide">
-                    <img
-                      class="partners__brand"
-                      src="images/main/partners/brand01.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="partners__slide swiper-slide">
-                    <img
-                      class="partners__brand"
-                      src="images/main/partners/brand02.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="partners__slide swiper-slide">
-                    <img
-                      class="partners__brand"
-                      src="images/main/partners/brand03.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="partners__slide swiper-slide">
-                    <img
-                      class="partners__brand"
-                      src="images/main/partners/brand04.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="partners__slide swiper-slide">
-                    <img
-                      class="partners__brand"
-                      src="images/main/partners/brand04.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="partners__slide swiper-slide">
-                    <img
-                      class="partners__brand"
-                      src="images/main/partners/brand04.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="partners__slide swiper-slide">
-                    <img
-                      class="partners__brand"
-                      src="images/main/partners/brand04.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="partners__slide swiper-slide">
-                    <img
-                      class="partners__brand"
-                      src="images/main/partners/brand04.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="QA" class="QA">
-          <div class="QA__background QA__background-left">
-            <picture>
-              <source
-                srcset="
-                  images/main/QA/mobile-left.png    1x,
-                  images/main/QA/mobile-left@2x.png 2x
-                "
-                type="image/webp"
-              />
-              <img src="images/main/QA/mobile-left.png" srcset="" alt="" />
-            </picture>
-          </div>
-          <div class="QA__background QA__background-right">
-            <picture>
-              <source
-                srcset="
-                  images/main/QA/mobile-right.png    1x,
-                  images/main/QA/mobile-right@2x.png 2x
-                "
-                type="image/webp"
-              />
-              <img src="images/main/QA/mobile-right.png" srcset="" alt="" />
-            </picture>
-          </div>
 
-          <div class="QA__container">
-            <div class="QA__body">
-              <div class="QA__title title">Часто задаваемые вопросы</div>
-              <div class="QA__content">
-                <ul id="accordion" class="accordionjs">
-                  <li>
-                    <div>Какую комиссию удерживаете?</div>
-                    <div>
-                      Далеко-далеко за словесными горами в стране гласных и
-                      согласных живут, рыбные тексты. Строчка собрал над алфавит
-                      единственное назад жаренные составитель букв раз,
-                      обеспечивает вдали, заглавных решила предупредила
-                      большого, своего текста ее по всей рыбными не? Дал,
-                      рукописи курсивных! Они ему свой строчка которое агентство
-                      решила вскоре гор все несколько, речью жаренные мир ее
-                      подпоясал страна семантика, назад маленькая пор текстами
-                      свое! То снова рекламных своего, безопасную пунктуация
-                      домах деревни переписывается наш она! Рыбного букв,
-                      инициал которой жизни прямо дороге всемогущая на берегу
-                      одна буквоград большой до? Океана ты над рукописи себя
-                      страну власти буквенных залетают взобравшись, безопасную
-                      приставка всемогущая продолжил за коварный языком.
+        </section>
+        <section class="games">
+          <ul id="accordion" class="accordionjs">
+            <li class="games__item">
+              <div>
+                <div class="games__head games__head-mobile">
+                  <div class="games__container">
+                    <div class="games__row">
+                      <div class="games__icon">
+                        <picture>
+                          <source
+                            srcset="
+                              images/main/games/icon.jpeg    1x,
+                              images/main/games/icon@2x.jpeg 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            src="images/main/games/icon.jpeg"
+                            srcset=""
+                            alt=""
+                          />
+                        </picture>
+                      </div>
+                      <div class="games__column">
+                        <div class="games__subtitle">FairyTeens</div>
+                        <div class="games__title">Magic 3D Coloring</div>
+                      </div>
                     </div>
-                  </li>
-                  <li>
-                    <div>Работаете ли с физическими лицами?</div>
-                    <div>
-                      Далеко-далеко за словесными, горами в стране гласных и
-                      согласных живут рыбные тексты. Ты грамматики образ там
-                      lorem вопрос, безопасную от всех злых толку предупредила
-                      то жизни оксмокс он заголовок ipsum текстами встретил
-                      решила!
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="games__content">
+                  <div class="games__container">
+                    <div class="games__body">
+                      <div class="games__image">
+                        <picture>
+                          <source
+                            srcset="
+                              images/main/games/img.jpeg    1x,
+                              images/main/games/img@2x.jpeg 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            src="images/main/games/img.jpeg"
+                            srcset=""
+                            alt=""
+                          />
+                        </picture>
+                      </div>
+                      <div class="games__wrapper">
+                        <div class="games__head games__head-desk">
+                            <div class="games__row">
+                              <div class="games__icon">
+                                <picture>
+                                  <source
+                                    srcset="
+                                      images/main/games/icon.jpeg    1x,
+                                      images/main/games/icon@2x.jpeg 2x
+                                    "
+                                    type="image/webp"
+                                  />
+                                  <img
+                                    src="images/main/games/icon.jpeg"
+                                    srcset=""
+                                    alt=""
+                                  />
+                                </picture>
+                              </div>
+                              <div class="games__column">
+                                <div class="games__subtitle">FairyTeens</div>
+                                <div class="games__title">Magic 3D Coloring</div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="games__text text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Duis id vehicula neque, eget vestibulum nunc. Integer
+                          nec tempus dolor. Nullam sagittis purus ullamcorper
+                          massa consectetur, at lobortis sapien rhoncus. Curabitur
+                          condimentum aliquet feugiat. Nam porta non ante
+                          ullamcorper dapibus.
+                        </div>
+                        <div class="games__footer">
+                          <div class="games__tryit">Try it now</div>
+                          <div class="games__links">
+                            <a href="" class="games__link">
+                              <img src="images/main/games/appstore.svg" alt="" />
+                            </a>
+                            <a href="" class="games__link">
+                              <img src="images/main/games/googleplay.svg" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </li>
-
-                  <!-- Section 3 -->
-                  <li>
-                    <div>Какую комиссию удерживаете?</div>
-                    <div>
-                      Далеко-далеко за словесными горами в стране гласных и
-                      согласных живут рыбные тексты. Вскоре дорогу решила
-                      реторический заманивший рукописи предложения, даль
-                      осталось назад рыбными силуэт возвращайся, большого
-                      использовало инициал букв родного, диких дал.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="games__item">
+              <div>
+                <div class="games__head games__head-mobile">
+                  <div class="games__container">
+                    <div class="games__row">
+                      <div class="games__icon">
+                        <picture>
+                          <source
+                            srcset="
+                              images/main/games/icon.jpeg    1x,
+                              images/main/games/icon@2x.jpeg 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            src="images/main/games/icon.jpeg"
+                            srcset=""
+                            alt=""
+                          />
+                        </picture>
+                      </div>
+                      <div class="games__column">
+                        <div class="games__subtitle">FairyTeens</div>
+                        <div class="games__title">Magic 3D Coloring</div>
+                      </div>
                     </div>
-                  </li>
-                  <!-- Section 4 -->
-                  <li>
-                    <div>Работаете ли с физическими лицами?</div>
-                    <div>
-                      Далеко-далеко за словесными горами в стране гласных и
-                      согласных живут рыбные тексты. О путь щеке, подпоясал все
-                      грустный буквоград города запятой. Реторический агентство
-                      текстами предупредила то рыбными страну сих себя напоивший
-                      что?
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="games__content">
+                  <div class="games__container">
+                    <div class="games__body">
+                      <div class="games__image">
+                        <picture>
+                          <source
+                            srcset="
+                              images/main/games/img.jpeg    1x,
+                              images/main/games/img@2x.jpeg 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            src="images/main/games/img.jpeg"
+                            srcset=""
+                            alt=""
+                          />
+                        </picture>
+                      </div>
+                      <div class="games__wrapper">
+                        <div class="games__head games__head-desk">
+                            <div class="games__row">
+                              <div class="games__icon">
+                                <picture>
+                                  <source
+                                    srcset="
+                                      images/main/games/icon.jpeg    1x,
+                                      images/main/games/icon@2x.jpeg 2x
+                                    "
+                                    type="image/webp"
+                                  />
+                                  <img
+                                    src="images/main/games/icon.jpeg"
+                                    srcset=""
+                                    alt=""
+                                  />
+                                </picture>
+                              </div>
+                              <div class="games__column">
+                                <div class="games__subtitle">FairyTeens</div>
+                                <div class="games__title">Magic 3D Coloring</div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="games__text text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Duis id vehicula neque, eget vestibulum nunc. Integer
+                          nec tempus dolor. Nullam sagittis purus ullamcorper
+                          massa consectetur, at lobortis sapien rhoncus. Curabitur
+                          condimentum aliquet feugiat. Nam porta non ante
+                          ullamcorper dapibus.
+                        </div>
+                        <div class="games__footer">
+                          <div class="games__tryit">Try it now</div>
+                          <div class="games__links">
+                            <a href="" class="games__link">
+                              <img src="images/main/games/appstore.svg" alt="" />
+                            </a>
+                            <a href="" class="games__link">
+                              <img src="images/main/games/googleplay.svg" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </li>
-                </ul>
-                <div class="QA__image">
-                  <picture>
-                    <source
-                      media="(max-width: 768px)"
-                      srcset="
-                        images/main/QA/img.png    1x,
-                        images/main/QA/img@2x.png 2x
-                      "
-                      type="image/webp"
-                    />
-                    <img src="images/main/QA/img.png" srcset="" alt="" />
-                  </picture>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="games__item">
+              <div>
+                <div class="games__head games__head-mobile">
+                  <div class="games__container">
+                    <div class="games__row">
+                      <div class="games__icon">
+                        <picture>
+                          <source
+                            srcset="
+                              images/main/games/icon.jpeg    1x,
+                              images/main/games/icon@2x.jpeg 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            src="images/main/games/icon.jpeg"
+                            srcset=""
+                            alt=""
+                          />
+                        </picture>
+                      </div>
+                      <div class="games__column">
+                        <div class="games__subtitle">FairyTeens</div>
+                        <div class="games__title">Magic 3D Coloring</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="games__content">
+                  <div class="games__container">
+                    <div class="games__body">
+                      <div class="games__image">
+                        <picture>
+                          <source
+                            srcset="
+                              images/main/games/img.jpeg    1x,
+                              images/main/games/img@2x.jpeg 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            src="images/main/games/img.jpeg"
+                            srcset=""
+                            alt=""
+                          />
+                        </picture>
+                      </div>
+                      <div class="games__wrapper">
+                        <div class="games__head games__head-desk">
+                            <div class="games__row">
+                              <div class="games__icon">
+                                <picture>
+                                  <source
+                                    srcset="
+                                      images/main/games/icon.jpeg    1x,
+                                      images/main/games/icon@2x.jpeg 2x
+                                    "
+                                    type="image/webp"
+                                  />
+                                  <img
+                                    src="images/main/games/icon.jpeg"
+                                    srcset=""
+                                    alt=""
+                                  />
+                                </picture>
+                              </div>
+                              <div class="games__column">
+                                <div class="games__subtitle">FairyTeens</div>
+                                <div class="games__title">Magic 3D Coloring</div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="games__text text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Duis id vehicula neque, eget vestibulum nunc. Integer
+                          nec tempus dolor. Nullam sagittis purus ullamcorper
+                          massa consectetur, at lobortis sapien rhoncus. Curabitur
+                          condimentum aliquet feugiat. Nam porta non ante
+                          ullamcorper dapibus.
+                        </div>
+                        <div class="games__footer">
+                          <div class="games__tryit">Try it now</div>
+                          <div class="games__links">
+                            <a href="" class="games__link">
+                              <img src="images/main/games/appstore.svg" alt="" />
+                            </a>
+                            <a href="" class="games__link">
+                              <img src="images/main/games/googleplay.svg" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="games__item">
+              <div>
+                <div class="games__head games__head-mobile">
+                  <div class="games__container">
+                    <div class="games__row">
+                      <div class="games__icon">
+                        <picture>
+                          <source
+                            srcset="
+                              images/main/games/icon.jpeg    1x,
+                              images/main/games/icon@2x.jpeg 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            src="images/main/games/icon.jpeg"
+                            srcset=""
+                            alt=""
+                          />
+                        </picture>
+                      </div>
+                      <div class="games__column">
+                        <div class="games__subtitle">FairyTeens</div>
+                        <div class="games__title">Magic 3D Coloring</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="games__content">
+                  <div class="games__container">
+                    <div class="games__body">
+                      <div class="games__image">
+                        <picture>
+                          <source
+                            srcset="
+                              images/main/games/img.jpeg    1x,
+                              images/main/games/img@2x.jpeg 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            src="images/main/games/img.jpeg"
+                            srcset=""
+                            alt=""
+                          />
+                        </picture>
+                      </div>
+                      <div class="games__wrapper">
+                        <div class="games__head games__head-desk">
+                            <div class="games__row">
+                              <div class="games__icon">
+                                <picture>
+                                  <source
+                                    srcset="
+                                      images/main/games/icon.jpeg    1x,
+                                      images/main/games/icon@2x.jpeg 2x
+                                    "
+                                    type="image/webp"
+                                  />
+                                  <img
+                                    src="images/main/games/icon.jpeg"
+                                    srcset=""
+                                    alt=""
+                                  />
+                                </picture>
+                              </div>
+                              <div class="games__column">
+                                <div class="games__subtitle">FairyTeens</div>
+                                <div class="games__title">Magic 3D Coloring</div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="games__text text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Duis id vehicula neque, eget vestibulum nunc. Integer
+                          nec tempus dolor. Nullam sagittis purus ullamcorper
+                          massa consectetur, at lobortis sapien rhoncus. Curabitur
+                          condimentum aliquet feugiat. Nam porta non ante
+                          ullamcorper dapibus.
+                        </div>
+                        <div class="games__footer">
+                          <div class="games__tryit">Try it now</div>
+                          <div class="games__links">
+                            <a href="" class="games__link">
+                              <img src="images/main/games/appstore.svg" alt="" />
+                            </a>
+                            <a href="" class="games__link">
+                              <img src="images/main/games/googleplay.svg" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="about">
+          <div class="about__body">
+            <div class="about__row about__container">
+              <div class="about__title">What is <span>DTCLAB?</span></div>
+              <div class="about__text text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id
+                  vehicula neque, eget vestibulum nunc. Integer nec tempus dolor.
+                  Nullam sagittis purus ullamcorper massa consectetur, at lobortis
+                  sapien rhoncus. Curabitur condimentum aliquet feugiat. Nam porta
+                  non ante ullamcorper dapibus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id
+                  vehicula neque, eget vestibulum nunc. Integer nec tempus dolor.
+                  Nullam sagittis purus ullamcorper massa consectetur, at lobortis
+                  sapien rhoncus. Curabitur condimentum aliquet feugiat. Nam porta
+                  non ante ullamcorper dapibus.</p>
+              </div>
+            </div>
+            <div class="about__row">
+              <div class="about__head about__container">
+                We work with companies all over the world
+              </div>
+              <div class="about__slider swiper">
+                <div class="about__wrapper swiper-wrapper">
+                  <div class="about__slide swiper-slide">
+                    <img src="images/main/about/brand1.svg" alt="" />
+                  </div>
+                  <div class="about__slide swiper-slide">
+                    <img src="images/main/about/brand2.svg" alt="" />
+                  </div>
+                  <div class="about__slide swiper-slide">
+                    <img src="images/main/about/brand3.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__row about__container">
+              <div class="about__achivments">
+                <div class="about__head">Our achievements</div>
+                <div class="about__columns">
+                  <div class="about__column column-about">
+                    <div class="column-about__count">360+</div>
+                    <div class="column-about__title">Achievement</div>
+                    <div class="column-about__subtitle text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis id vehicula neque, eget vestibulum nunc. Integer nec
+                      tempus dolor.
+                    </div>
+                  </div>
+                  <div class="about__column column-about">
+                    <div class="column-about__count">360+</div>
+                    <div class="column-about__title">Achievement</div>
+                    <div class="column-about__subtitle text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis id vehicula neque, eget vestibulum nunc. Integer nec
+                      tempus dolor.
+                    </div>
+                  </div>
+                  <div class="about__column column-about">
+                    <div class="column-about__count">360+</div>
+                    <div class="column-about__title">Achievement</div>
+                    <div class="column-about__subtitle text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis id vehicula neque, eget vestibulum nunc. Integer nec
+                      tempus dolor.
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="actions">
-          <div class="actions__container">
-            <div class="actions__body">
-              <div class="actions__title title">
-                И нечего больше думать! Присоединяйся к профессионалам для
-                выгодных закупок.
+        <section class="form-block">
+          <div class="form-block__container">
+            <div class="form-block__body">
+              <div class="form-block__title">Get in touch</div>
+              <div class="form-block__subtitle">
+                <div class="form-block__icon">
+                  <img src="images/icons/email.svg" alt="">
+                </div>
+                <div class="form-block__email">
+                  E-mail: <br>
+                  <a href="mailto:info@dtclab.pro">info@dtclab.pro</a>
+                </div>
               </div>
-              <div class="actions__subtitle">
-                Большая база надежных поставщиков и покупателей.
-              </div>
-              <div class="actions__buttons">
-                <button class="actions__btn btn btn-g">Покупаю</button>
-                <button class="actions__btn btn btn-w">Продаю</button>
+              <div class="form-block__form form">
+                <form action="" class="form__body">
+                  <div class="form__row">
+                    <label for="form-username" class="form__label"
+                      >Your name:</label
+                    >
+                    <input
+                      required
+                      placeholder=" "
+                      oninput="this.value=this.value.replace(/[^а-яА-Яa-zA-Z]/g,'');"
+                      minlength="3"
+                      type="text"
+                      name="username"
+                      id="form-username"
+                      class="form__input"
+                    />
+                  </div>
+                  <div class="form__row">
+                    <label for="email" class="form__label">Your e-mail:</label>
+                    <input
+                      required
+                      placeholder=" "
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form__input"
+                    />
+                  </div>
+                  <div class="form__row">
+                    <label for="form-comment" class="form__label"
+                      >Your message:</label
+                    >
+                    <textarea
+                      placeholder=" "
+                      name="comment"
+                      id="form-comment"
+                      class="form__textarea"
+                    ></textarea>
+                  </div>
+                  <div class="form__row form__row-radio">
+                    <label class="form__label form__label-radio">
+                      <input type="radio" required name="policy" id="" />
+                      <span class="checkbox-span"></span>
+                      Duis id vehicula neque, <a href="" class="form__policy">eget vestibulum nunc.</a>  Integer nec <a href="" class="form__policy"> tempus dolor.</a>
+                    </label>
+                  </div>
+                  <div class="form__row form__row-radio">
+                    <label class="form__label form__label-radio">
+                      <input type="radio" required name="policy" id="" />
+                      <span class="checkbox-span"></span>
+                      Duis id vehicula neque, <a href="" class="form__policy">eget vestibulum nunc.</a>  Integer nec <a href="" class="form__policy"> tempus dolor.</a>
+                    </label>
+                  </div>
+                  <button class="form__btn btn" type="submit">
+                    Send a request
+                  </button>
+                </form>
               </div>
             </div>
           </div>
         </section>
       </main>
-      <div id="popup" class="popup">
+      <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__body">
+      <div class="footer__logo">
+        <img src="images/icons/logo.svg" alt=""></div>
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="" class="footer__link">Home page</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">Terms of Use</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">Support</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__copyright">© DTCLAB LTD, 2022-2023</div>
+    </div>
+  </div>
+</footer> <div id="popup" class="popup">
   <div class="popup__body">
     <div class="popup__content">
       <a href="##" class=" icon-close close-popup">
@@ -601,79 +781,10 @@
     </div>
   </div>
 </div>
-      <footer class="footer">
-  <div class="footer__container">
-    <div class="footer__body">
-      <div class="footer__top">
-        <div class="footer__row">
-          <div class="footer__logo">
-            <img src="images/icons/logo-footer.svg" alt="">
-          </div>
-          <div class="footer__sublogo">
-            В рамках спецификации современных стандартов, реплицированные с
-            зарубежных источников, современные
-          </div>
-        </div>
-        <div class="footer__row">
-          <div class="footer__nav">
-            <ul id="footer-accordion" class="accordionjs">
-              <li>
-                <div class="footer__head">Контакты</div>
-                <div class="footer__list">
-                  <div class="footer__item"><a class="footer__link" href="">Адрес: <span>г. Санкт-Петербург, ул. площадь Восстания, дом 0, корп. 0 </span></a></div>
-                  <div class="footer__item"><a class="footer__link" href="">Почта: <span>г. Санкт-Петербург, ул. площадь Восстания, дом 0, корп. 0</span></a></div>
-                  <div class="footer__item"><a class="footer__link" href="tel:">Телефон: <span>8-000-000-00-00</span></a></div>
-                </div>
-              </li>
-              <li>
-                <div class="footer__head ">Соц.сети</div>
-                <div class="footer__list footer__socials">
-                  <div class="footer__item"><a class="footer__link" href="">VKontakte</a></div>
-                  <div class="footer__item"><a class="footer__link" href="">Instagram</a></div>
-                  <div class="footer__item"><a class="footer__link" href="https://wa.me/79000000000"> WhatsApp</a></div>
-                </div>
-              </li>
-              <li>
-                <div class="footer__head">Быстрый вход</div>
-                <div class="footer__list">
-                  <div class="footer__item"><a class="footer__link" href="">Личный кабинет</a></div>
-                  <div class="footer__item"><a class="footer__link" href="">Направления деятельности</a></div>
-                  <div class="footer__item"><a class="footer__link" href="">Связь с администрацией</a></div>
-                </div>
-              </li>
-              <li>
-                <div class="footer__head">Навигация</div>
-                <div class="footer__body-list" >
-                  <div class="footer__list">
-                    <div class="footer__item"><a class="footer__link" href="#new-products">Новые торги</a></div>
-                    <div class="footer__item"><a class="footer__link" href="#service">Как работает сервис</a></div>
-                    <div class="footer__item"><a class="footer__link" href="#sale">Реклама</a></div>
-                  </div>
-                  <div class="footer__list">
-                    <div class="footer__item"><a class="footer__link" href="#sale">Новости</a></div>
-                    <div class="footer__item"><a class="footer__link" href="#partners">Партнёры</a></div>
-                    <div class="footer__item"><a class="footer__link" href="#QA">Часто задаваемые вопросы</a></div>
-                  </div>
-                </div >
-              </li>
-            </ul>
-          </div>
-          <div class="footer__pay">
-          <img src="images/icons/halva.svg" alt="">
-          <img src="images/icons/payment.svg" alt="">
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="footer__bottom __container">
-    <div class="footer__policy"><a href="">Политика конфиденциальности</a></div>
-    <div class="footer__copy">© 2007-2021 AESbill</div>
-  </div>
-</footer>
-    </div>
-    <script src="files/libs/swiper/swiper-bundle.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/app.min.js"></script>
+    <script src="files/libs/swiper/swiper-bundle.min.js?_v=20230330213246"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js?_v=20230330213246"></script>
+
+<script src="js/app.min.js?_v=20230330213246"></script>
   </body>
 </html>
