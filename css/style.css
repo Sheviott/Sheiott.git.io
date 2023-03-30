@@ -382,8 +382,7 @@ form {
   border: 1px solid #000;
 }
 
-input[type=checkbox]:checked,
-input[type=radio]:checked + .checkbox-span {
+input[type=checkbox]:checked + .checkbox-span {
   background-image: url(../images/icons/mark.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -564,10 +563,6 @@ input[type=radio]:checked + .checkbox-span {
   color: #2C3E50;
   display: block;
   font-size: 0.875pxrem;
-  text-decoration: underline;
-}
-
-.footer__link:hover {
   text-decoration: underline;
 }
 
@@ -904,6 +899,10 @@ input[type=radio]:checked + .checkbox-span {
   display: inline-block;
   margin-top: 1rem;
   text-decoration: underline;
+}
+
+.form-block__subtitle a:hover {
+  text-decoration: none;
 }
 
 .form-block__icon {
