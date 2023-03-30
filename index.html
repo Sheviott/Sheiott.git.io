@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="../files/libs/accordion/accordion.css?_v=20230327092932"> -->
+  <!-- <link rel="stylesheet" href="../files/libs/accordion/accordion.css?_v=20230330103508"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20230327092932" rel="stylesheet"> -->
-  <link rel="stylesheet" href="css/style.min.css?_v=20230327092932">
+<link href="../files/libs/datePicker/air-datepicker.css?_v=20230330103508" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230330103508">
   
   <title>Главная</title>
 </head>
 
 
-  <body data-lp>
-    <div class="wrapper">
+  <body id="mainpage" data-lp>
+    <div class="wrapper ">
       <header class="header">
   <div class="header__container">
     <div class="header__body">
@@ -101,12 +101,12 @@
                   </div>
                 </div>
                 <div class="mainscreen__actions">
-                  <button class="mainscreen__client btn btn-g">
+                  <a href="account.html" class="mainscreen__client btn btn-g">
                     Я покупатель
-                  </button>
-                  <button class="mainscreen__provider btn btn-w">
+                  </a>
+                  <a href="account.html" class="mainscreen__provider btn btn-w">
                     Я поставщик
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -559,6 +559,48 @@
           </div>
         </section>
       </main>
+      <div id="popup" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="##" class=" icon-close close-popup">
+        <span class="close"></span>
+      </a>
+      <div class="Content">
+        content
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Выбор города --> 
+<div id="choose-city" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="##" class=" icon-close close-popup">
+        <span class="close"></span>
+      </a>
+      <div class="city__body">
+        <div class="city__active">Выберите Ваш город:</div>
+        <ul data-city-list class="city__list">
+          <div data-city-item class="city__item active">Брянск</div>
+          <div data-city-item class="city__item">Москва</div>
+          <div data-city-item class="city__item">Санкт-Петербург</div>
+          <div data-city-item class="city__item">Екатеринбург</div>
+          <div data-city-item class="city__item">Белгород</div>
+          <div data-city-item class="city__item">Астрахань</div>
+          <div data-city-item class="city__item">Казань</div>
+          <div data-city-item class="city__item">Краснодар</div>
+          <div data-city-item class="city__item">Красноярск</div>
+          <div data-city-item class="city__item">Воронеж</div>
+          <div data-city-item class="city__item">Орел</div>
+          <div data-city-item class="city__item">Волгоград</div>
+          <div data-city-item class="city__item">Челябинск</div>
+          <div data-city-item class="city__item">Нижний Новгород</div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
       <footer class="footer">
   <div class="footer__container">
     <div class="footer__body">
@@ -628,51 +670,10 @@
     <div class="footer__policy"><a href="">Политика конфиденциальности</a></div>
     <div class="footer__copy">© 2007-2021 AESbill</div>
   </div>
-</footer> <div id="popup" class="popup">
-  <div class="popup__body">
-    <div class="popup__content">
-      <a href="##" class=" icon-close close-popup">
-        <span class="close"></span>
-      </a>
-      <div class="Content">
-        content
-      </div>
+</footer>
     </div>
-  </div>
-</div>
-
-<!-- Выбор города --> 
-<div id="choose-city" class="popup">
-  <div class="popup__body">
-    <div class="popup__content">
-      <a href="##" class=" icon-close close-popup">
-        <span class="close"></span>
-      </a>
-      <div class="city__body">
-        <div class="city__active">Выберите Ваш город:</div>
-        <ul data-city-list class="city__list">
-          <div data-city-item class="city__item active">Брянск</div>
-          <div data-city-item class="city__item">Москва</div>
-          <div data-city-item class="city__item">Санкт-Петербург</div>
-          <div data-city-item class="city__item">Екатеринбург</div>
-          <div data-city-item class="city__item">Белгород</div>
-          <div data-city-item class="city__item">Астрахань</div>
-          <div data-city-item class="city__item">Казань</div>
-          <div data-city-item class="city__item">Краснодар</div>
-          <div data-city-item class="city__item">Красноярск</div>
-          <div data-city-item class="city__item">Воронеж</div>
-          <div data-city-item class="city__item">Орел</div>
-          <div data-city-item class="city__item">Волгоград</div>
-          <div data-city-item class="city__item">Челябинск</div>
-          <div data-city-item class="city__item">Нижний Новгород</div>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-    <script src="files/libs/swiper/swiper-bundle.min.js?_v=20230327092932"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js?_v=20230327092932"></script>
-<script src="js/app.min.js?_v=20230327092932"></script>
+    <script src="files/libs/swiper/swiper-bundle.min.js?_v=20230330103508"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js?_v=20230330103508"></script>
+<script src="js/app.min.js?_v=20230330103508"></script>
   </body>
 </html>
